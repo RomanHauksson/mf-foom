@@ -1,4 +1,4 @@
-# MF FOOM
+# MF [FOOM](https://en.wiktionary.org/wiki/foom#Noun)
 
 I fine-tuned GPT-3 on the lyrics of 96 MF DOOM songs to write rap lyrics in his style. Then, I used ElevenLabs to clone his voice and make him rap the lyrics.
 
