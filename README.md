@@ -4,11 +4,13 @@ I fine-tuned GPT-3 on the lyrics of 96 MF DOOM songs to write rap lyrics in his 
 
 ## Demo
 
-Input prompt:
+https://user-images.githubusercontent.com/62364808/232918506-4b40215b-728b-4879-9631-8c5107e28855.mp4
+
+### Input prompt
 
 > A song titled "Metal Mask" about the story of how MF DOOM obtained his iconic metal mask and the power it gives him in the rap game.
 
-Lyrics:
+### Output lyrics
 
 > Metal Mask Lyrics[Verse: MF DOOM + Samples]
 Metal mask give him bad brains, pain man can't explain\
