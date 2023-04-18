@@ -11,36 +11,36 @@ Input prompt:
 Lyrics:
 
 > Metal Mask Lyrics[Verse: MF DOOM + Samples]
-> Metal mask give him bad brains, pain man can't explain
-> Got locked up like a zoo monkey, then poof! Freedom
-> Got loose, left the cell, started rockin fools clean
-> Like a hill of beans, beans, no pan dulce
-> The rap game is like the seventh seal, it's so real
-> He hide behind a mask like a child, it's cold steel
-> No regrets, he do what he gotta and he peep this
-> I hold this, zap! Straight out the box, no joke
-> Deadly as a runaway stampede or lightning bolt in Summertime
-> Big as a Bumblebee sting and quicker to bring strife
-> Through the big speakers, sound bombs, ignite drama
-> On my A-game, I be straight sniper, through your eye likeGrey's Anatomy
-> White chick that be in the show with all them doctors
-> Know what I'm saying? The name control the ball like gridiron
-> Speech, diction, syntax is triple A rated
-> And it's not how he talk it, who he talk to
-> To all y'all that hate, keep your mouth closed
-> (DOOM!) Watch the mask and you'll see
-> And say your prayers, like "Boom! He's back!"
-> You won't see me, I disappear like Dr. Jekyll and Mr. Hyde
-> Boogie blow, snatch the dough then split like Houdini
-> Like a palm tree in Africa, can't stand still
-> With the metal mask, give him mad-r'dic skills
-> Like Kung Fu, uncanny too and always get it poppin'
-> Always gone, always goon, on the road that's how it seem
-> Seriously, he be writing on the tour like Forrest Gump
-> Went to dinner with the 'mentor', it was crazy dude
-> He gave him advice, he told him what life was about
-> We got beef with Jim Crow and don't forget
-> The name is DOOM, the mask gives him powers
+Metal mask give him bad brains, pain man can't explain\
+Got locked up like a zoo monkey, then poof! Freedom\
+Got loose, left the cell, started rockin fools clean\
+Like a hill of beans, beans, no pan dulce\
+The rap game is like the seventh seal, it's so real\
+He hide behind a mask like a child, it's cold steel\
+No regrets, he do what he gotta and he peep this\
+I hold this, zap! Straight out the box, no joke\
+Deadly as a runaway stampede or lightning bolt in Summertime\
+Big as a Bumblebee sting and quicker to bring strife\
+Through the big speakers, sound bombs, ignite drama\
+On my A-game, I be straight sniper, through your eye likeGrey's Anatomy\
+White chick that be in the show with all them doctors\
+Know what I'm saying? The name control the ball like gridiron\
+Speech, diction, syntax is triple A rated\
+And it's not how he talk it, who he talk to\
+To all y'all that hate, keep your mouth closed\
+(DOOM!) Watch the mask and you'll see\
+And say your prayers, like "Boom! He's back!"\
+You won't see me, I disappear like Dr. Jekyll and Mr. Hyde\
+Boogie blow, snatch the dough then split like Houdini\
+Like a palm tree in Africa, can't stand still\
+With the metal mask, give him mad-r'dic skills\
+Like Kung Fu, uncanny too and always get it poppin'\
+Always gone, always goon, on the road that's how it seem\
+Seriously, he be writing on the tour like Forrest Gump\
+Went to dinner with the 'mentor', it was crazy dude\
+He gave him advice, he told him what life was about\
+We got beef with Jim Crow and don't forget\
+The name is DOOM, the mask gives him powers
 
 ## Technical details
 
