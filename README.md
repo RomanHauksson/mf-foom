@@ -1,40 +1,56 @@
 # MF FOOM
 
-I fine-tuned GPT-3 on the lyrics of 96 MF DOOM songs to write rap lyrics in his style. The results aren't great but may improve if I retried using a bigger model.
+I fine-tuned GPT-3 on the lyrics of 96 MF DOOM songs to write rap lyrics in his style. Then, I cloned his voice and made him rap the lyrics.
 
-## Example
+## Demo
 
 Input prompt:
 
 > A song titled "Metal Mask" about the story of how MF DOOM obtained his iconic metal mask and the power it gives him in the rap game.
 
+Lyrics:
 
-Output:
+> Metal Mask Lyrics[Verse: MF DOOM + Samples]
+> Metal mask give him bad brains, pain man can't explain
+> Got locked up like a zoo monkey, then poof! Freedom
+> Got loose, left the cell, started rockin fools clean
+> Like a hill of beans, beans, no pan dulce
+> The rap game is like the seventh seal, it's so real
+> He hide behind a mask like a child, it's cold steel
+> No regrets, he do what he gotta and he peep this
+> I hold this, zap! Straight out the box, no joke
+> Deadly as a runaway stampede or lightning bolt in Summertime
+> Big as a Bumblebee sting and quicker to bring strife
+> Through the big speakers, sound bombs, ignite drama
+> On my A-game, I be straight sniper, through your eye likeGrey's Anatomy
+> White chick that be in the show with all them doctors
+> Know what I'm saying? The name control the ball like gridiron
+> Speech, diction, syntax is triple A rated
+> And it's not how he talk it, who he talk to
+> To all y'all that hate, keep your mouth closed
+> (DOOM!) Watch the mask and you'll see
+> And say your prayers, like "Boom! He's back!"
+> You won't see me, I disappear like Dr. Jekyll and Mr. Hyde
+> Boogie blow, snatch the dough then split like Houdini
+> Like a palm tree in Africa, can't stand still
+> With the metal mask, give him mad-r'dic skills
+> Like Kung Fu, uncanny too and always get it poppin'
+> Always gone, always goon, on the road that's how it seem
+> Seriously, he be writing on the tour like Forrest Gump
+> Went to dinner with the 'mentor', it was crazy dude
+> He gave him advice, he told him what life was about
+> We got beef with Jim Crow and don't forget
+> The name is DOOM, the mask gives him powers
 
-```
-Metal Mask Lyrics[Intro]
-DOOM!
-(What? You wanna give me some shit?)
-Yeah, I got a thing for you (what?)
-[Verse 1: MF DOOM]
+## Technical details
 
-I'm the master of this mask, and I use it to hide my face
-The metal mask keeps me on the edge of sanity
-That's when I'm at home with my girl, or in a club with my man
-I might as well be playing Secret Agent Man (Secret Agent...man!)
-At the same time, I can do anything that a normal person could do
-For instance, if somebody was coming after me with a gun (Gun!) then you know what I'd do? (I'd blast 'em! Gun!) You already know what I'd do? Well for real though...it gives me powers in this rap game!
+- `lyrics.py` downloads the lyrics of every MF DOOM song from Genius.com and saves them to lyrics.json.
+- `prompts.py` generates a one-sentence summary of each song and uses each summary–lyrics pair to generate fine-tuning prompts, which it saves in `prompts.jsonl`.
+- I cleaned up the prompts by removing any string in `prompts.jsonl` which matched the regular expressions `You might also like.{0,3}Embed`, `You might also like`, or `\d*Embed`.
+- Then, I ran `openai api fine_tunes.create -t prompts.jsonl -m davinci` in the terminal to fine-tune a GPT-3 Davinci model on the prompts and then generated an example in the OpenAI API Playground.
+    - I used default generation settings, except a temperature of 0.9 and a presence penalty of 0.46.
+- I used [ElevenLabs](https://beta.elevenlabs.io/) to clone DOOM's voice from [the acapella version of *Gazzillion Ear*](https://www.youtube.com/watch?v=LoXJd4Hkbcg).
+    - I then generated the vocals from the lyrics using this clone with a stability of 86% and a similarity of 100%.
+- Finally, I overlaid the vocals onto [the instrumental of *Gazzillion Ear*](https://www.youtube.com/watch?v=sQ7aKsYxwaM).
 
-[Hook: MF DOOM + (Produced by MF DOOM)]
-The metal mask keeps me on the edge of sanity
-I might as well be playing Secret Agent Man (Secret Agent...man!)
-At the same time, I can do anything that a normal person could do
-For instance, if somebody was coming after me with a gun (Gun!) then you know what I'd do? (I'd blast 'em! Gun) You already know what I'd do? Well for real though...it gives me powers in this rap game!
-The metal mask keeps me on the edge of sanityYou might also likeEmbedShare1Embed1 233Embed0You might also like29Embed2 1.8KFollowers›Mike Tyson is back to square one›Mike Tyson says he wants his first child to be named "Tyson"6 EmbedsBrandy Deol's brother arrested for DUI in NY7Embeds23Embeds11Embedly34Shared1This video has been shared(Produced by MF DOOM)15Sub hate rhymes3:2443 EmbarsMF DOOM grew up listening to stories about how he obtained his iconic metal mask and how it gave him all kinds of
-```
-
-## Workflow
-
-1. `lyrics.py` downloads the lyrics of every MF DOOM song from Genius.com and saves them to lyrics.json.
-2. `prompts.py` generates a one-sentence summary of each song and uses each summary–lyrics pair to generate fine-tuning prompts, which it saves in `prompts.jsonl`.
-3. I ran `openai api fine_tunes.create -t prompts.jsonl -m babbage` in the terminal to fine-tune a GPT-3 Babbage model on the prompts and then generated an example in the OpenAI API Playground.
+*The lyrics I generated and the final song Metal Mask are a non-commercial parody.*
