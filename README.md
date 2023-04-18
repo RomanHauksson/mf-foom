@@ -1,6 +1,6 @@
 # MF FOOM
 
-I fine-tuned GPT-3 on the lyrics of 96 MF DOOM songs to write rap lyrics in his style. Then, I cloned his voice and made him rap the lyrics.
+I fine-tuned GPT-3 on the lyrics of 96 MF DOOM songs to write rap lyrics in his style. Then, I used ElevenLabs to clone his voice and make him rap the lyrics.
 
 ## Demo
 
