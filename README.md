@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/62364808/232918506-4b40215b-728b-4879-
 
 ### Output lyrics
 
-> Metal Mask Lyrics[Verse: MF DOOM + Samples]
+> Metal Mask Lyrics[Verse: MF DOOM + Samples]\
 Metal mask give him bad brains, pain man can't explain\
 Got locked up like a zoo monkey, then poof! Freedom\
 Got loose, left the cell, started rockin fools clean\
